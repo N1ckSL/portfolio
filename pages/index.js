@@ -95,7 +95,7 @@ const Home = () => (
           I am <span style={{ color: 'red' }}> 22 </span>/💯 years old. I was
           born in Republic of Moldova, Cahul. In 2017 I started my road to
           getting involved in dev. My first steps were creating basic static web
-          pages in notebook and then changing it's extension to{' '}
+          pages in notebook and then changing it&apos;s extension to{' '}
           <em style={{ color: '#81E6D9' }}> .html </em>. Although those were
           very dorky, I felt empowered by the fact that I could do something by
           myself and see the results on the screen. It was something I really
@@ -106,7 +106,7 @@ const Home = () => (
           Most exciting thing for me is looking back to where I was at the
           begining and comparing my achievements, successes, and failures. This
           gives me motivation to continuously evolve. Looking back to where I
-          started - it's a long road, which I do not regreting taking.
+          started - it&apos;s a long road, which I do not regreting taking.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -133,7 +133,7 @@ const Home = () => (
             July <span style={{ color: '#81E6D9' }}> 2021 </span>
           </BioYear>
           <br />
-          Completed Bachelor's Degree at Ovidius University from Constanța,
+          Completed Bachelor&apos;s Degree at Ovidius University from Constanța,
           Romania.
         </BioSection>
         <BioSection mb={4}>
@@ -141,7 +141,7 @@ const Home = () => (
             October <span style={{ color: '#81E6D9' }}> 2021 </span>
           </BioYear>
           <br />
-          Started Master's Degree at West University of Timișoara, Romania.
+          Started Master&apos;s Degree at West University of Timișoara, Romania.
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
@@ -169,7 +169,7 @@ const Home = () => (
           <br />
           <br />A big passion of mine are computer games. Despite others
           opinions, for me - video games are a way to relax after a long day, or
-          it's an alternative way to keep in touch with your friends that are
+          it&apos;s an alternative way to keep in touch with your friends that are
           far away.
           <br />
           <br />
@@ -191,7 +191,7 @@ const Home = () => (
               players from region <em> (Republic of Moldova) </em>
             </ListItem>
             <ListItem>
-              <Meta>CS:GO</Meta>IGL and capitain of team <span style={{color: "#D657A5"}}>"CHGO"</span>
+              <Meta>CS:GO</Meta>IGL and capitain of team <span style={{color: "#D657A5"}}>&quot;CHGO&quot;</span>
             </ListItem>
 
           </List>

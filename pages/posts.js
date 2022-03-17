@@ -3,14 +3,10 @@ import {
   Center,
   Container,
   Heading,
-  SimpleGrid,
   Stack,
   Text
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-
 
 const Posts = () => (
   <Layout title="Posts">
