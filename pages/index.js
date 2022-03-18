@@ -30,7 +30,6 @@ import {
 import thumbMogo from '../public/images/works/mogo.png'
 import thumbReact from '../public/images/works/mock.png'
 import Image from 'next/image'
-import { Meta } from '../components/work'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
