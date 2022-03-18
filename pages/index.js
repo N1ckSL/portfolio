@@ -12,8 +12,7 @@ import {
   chakra,
   Tooltip,
   Center,
-  Badge,
-  AspectRatio
+  Badge
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'

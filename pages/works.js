@@ -2,7 +2,6 @@ import {
   Container,
   Heading,
   SimpleGrid,
-  Divider,
   Badge,
   AspectRatio
 } from '@chakra-ui/react'
@@ -14,6 +13,7 @@ import thumbMogo from '../public/images/works/mogo.png'
 import thumbNade from '../public/images/works/nade.png'
 import thumbEvx from '../public/images/works/evx.png'
 import thumbReact from '../public/images/works/react.png'
+import thumbMern from '../public/images/works/mock.png'
 import thumbPortfolio from '../public/images/works/portfolio.png'
 
 const Works = () => (
@@ -41,6 +41,15 @@ const Works = () => (
             id="react"
             title="Social network"
             thumbnail={thumbReact}
+          >
+            <Badge colorScheme="green">Completed</Badge>
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="mern"
+            title="eSchool"
+            thumbnail={thumbMern}
           >
             <Badge colorScheme="green">Completed</Badge>
           </WorkGridItem>
