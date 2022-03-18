@@ -30,7 +30,6 @@ import {
 import thumbMogo from '../public/images/works/mogo.png'
 import thumbReact from '../public/images/works/mock.png'
 import Image from 'next/image'
-import { Meta } from '../components/work'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -134,7 +133,7 @@ const Home = () => (
           </BioYear>
           <br />
           Completed Bachelor&apos;s Degree at Ovidius University from Constanța,
-          Romania.
+          România.
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
@@ -177,21 +176,20 @@ const Home = () => (
           <br />
           <List>
             <ListItem>
-              <Meta>CS:GO</Meta>Quarter finalist at Moldcell
+              <Badge colorScheme="orange" display="initial">CS:GO</Badge> Quarter finalist at Moldcell
               Cup 2020
             </ListItem>
             <ListItem>
-              <Meta>CS:GO</Meta>
+              <Badge colorScheme="orange" display="initial">CS:GO</Badge>
               <Link
                 href="https://www.faceit.com/en/players/NiXL1337"
                 target="_blank"
-              >
-                Top 300
+              > Top 300
               </Link>{' '}
               players from region <em> (Republic of Moldova) </em>
             </ListItem>
             <ListItem>
-              <Meta>CS:GO</Meta>IGL and capitain of team <span style={{color: "#D657A5"}}>&quot;CHGO&quot;</span>
+              <Badge colorScheme="orange" display="initial">CS:GO</Badge> IGL and captain of team <span style={{color: "#D657A5"}}>&quot;CHGO&quot;</span>
             </ListItem>
 
           </List>
@@ -273,6 +271,7 @@ const Home = () => (
                   aria-label="A tooltip"
                   variant="ghost"
                   colorScheme="teal"
+                  closeOnClick={false}
                 >
               <Button
                 variant="ghost"
@@ -288,20 +287,21 @@ const Home = () => (
         </List>
 
         <SimpleGrid my={5} columns={[1, 2, 2]} gap={6}>
+
           <GridItem
             href="https://youtu.be/7OJucTAKXCE"
             title="Single Page Social Network app"
             thumbnail={thumbReact}
-          >
+            >
             A Social Network created with <Badge colorScheme="blue"> React</Badge>
           </GridItem>
+
           <GridItem
             href="https://mogogo.netlify.com/"
             title="Mogo"
             thumbnail={thumbMogo}
             style={{minHeight: "200px"}}
-            
-          >
+            >
              A modern <Badge colorScheme="orange"> landing page</Badge>
           </GridItem>
         </SimpleGrid>
