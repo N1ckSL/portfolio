@@ -56,7 +56,7 @@ const Home = () => (
           <p>
             Digital creator ( <Badge colorScheme="red"> Student</Badge> /{' '}
             <Badge colorScheme="purple"> Developer</Badge> /{' '}
-            <Badge colorScheme="cyan"> Sole of company </Badge> )
+            <Badge colorScheme="cyan"> Life of a party </Badge> )
           </p>
         </Box>
         <Box
