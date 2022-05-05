@@ -11,7 +11,6 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbMogo from '../public/images/works/mogo.png'
 import thumbNade from '../public/images/works/nade.png'
-// import thumbEvx from '../public/images/works/evx.png'
 import thumbReact from '../public/images/works/react.png'
 import thumbMern from '../public/images/works/mock.png'
 import thumbPortfolio from '../public/images/works/portfolio.png'
@@ -60,18 +59,13 @@ const Works = () => (
           Old Works
         </Heading>
 
-        {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
-            <WorkGridItem id="evx" title="Travel agency" thumbnail={thumbEvx}>
-              <Badge colorScheme="green">Completed</Badge>
-            </WorkGridItem>
-          </Section>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="portfolio" title="Portfolio page" thumbnail={thumbPortfolio}>
               <Badge colorScheme="red">postponed</Badge>
             </WorkGridItem>
           </Section>
-        </SimpleGrid> */}
+        </SimpleGrid>
 
       </Container>
     </Container>
