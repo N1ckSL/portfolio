@@ -10,6 +10,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbMogo from '../public/images/works/mogo.png'
+import thumbChess from '../public/images/works/thumbChess.png'
 import thumbNade from '../public/images/works/nade.png'
 import thumbReact from '../public/images/works/react.png'
 import thumbMern from '../public/images/works/mock.png'
@@ -31,6 +32,13 @@ const Works = () => (
           </AspectRatio>
         </Section>
         <Section>
+          <AspectRatio ratio={4 / 3}>
+            <WorkGridItem id="chess" title="Chess" thumbnail={thumbChess}>
+              <Badge colorScheme="yellow">In progess</Badge>
+            </WorkGridItem>
+          </AspectRatio>
+        </Section>
+        <Section>
           <WorkGridItem id="nadecamp" title="NadeCamp" thumbnail={thumbNade}>
             <Badge colorScheme="yellow">In progess</Badge>
           </WorkGridItem>
@@ -45,11 +53,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem
-            id="mern"
-            title="eSchool"
-            thumbnail={thumbMern}
-          >
+          <WorkGridItem id="mern" title="eSchool" thumbnail={thumbMern}>
             <Badge colorScheme="green">Completed</Badge>
           </WorkGridItem>
         </Section>
@@ -61,12 +65,15 @@ const Works = () => (
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem id="portfolio" title="Portfolio page" thumbnail={thumbPortfolio}>
+            <WorkGridItem
+              id="portfolio"
+              title="Portfolio page"
+              thumbnail={thumbPortfolio}
+            >
               <Badge colorScheme="red">postponed</Badge>
             </WorkGridItem>
           </Section>
         </SimpleGrid>
-
       </Container>
     </Container>
   </Layout>
