@@ -28,7 +28,7 @@ import {
   IoLogoSteam
 } from 'react-icons/io5'
 import thumbMogo from '../public/images/works/mogo.png'
-import thumbReact from '../public/images/works/mock.png'
+import thumbChess from '../public/images/works/thumbChess.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -122,14 +122,7 @@ const Home = () => (
         </Heading>
         <BioSection mb={4}>
           <BioYear>
-            August <span style={{ color: '#81E6D9' }}> 1999 </span>{' '}
-          </BioYear>
-          <br />
-          Born in Cahul, Republic of Moldova.
-        </BioSection>
-        <BioSection mb={4}>
-          <BioYear>
-            July <span style={{ color: '#81E6D9' }}> 2021 </span>
+            <span style={{ color: '#81E6D9' }}> 2018 - 2021 </span>
           </BioYear>
           <br />
           Completed Bachelor&apos;s Degree at Ovidius University from Constanța,
@@ -137,7 +130,8 @@ const Home = () => (
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
-            October <span style={{ color: '#81E6D9' }}> 2021 </span>
+          <span style={{ color: '#81E6D9' }}> 2021 </span> to{' '}
+            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
           </BioYear>
           <br />
           Started Master&apos;s Degree at West University of Timișoara, Romania.
@@ -289,11 +283,11 @@ const Home = () => (
         <SimpleGrid my={5} columns={[1, 2, 2]} gap={6}>
 
           <GridItem
-            href="https://youtu.be/7OJucTAKXCE"
-            title="Single Page Social Network app"
-            thumbnail={thumbReact}
+            href="https://react-chess-delta.vercel.app/"
+            title="Good old Chess game, but build by me"
+            thumbnail={thumbChess}
             >
-            A Social Network created with <Badge colorScheme="blue"> React</Badge>
+            Created with <Badge colorScheme="blue"> React</Badge>
           </GridItem>
 
           <GridItem
