@@ -30,7 +30,6 @@ import {
 import thumbMogo from '../public/images/works/mogo.png'
 import thumbChess from '../public/images/works/thumbChess.png'
 import Image from 'next/image'
-import MouseFollower from '../features/MouseFollower'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -54,7 +53,6 @@ const getMyAge = () => {
 
 const Home = () => (
   <Layout>
-    <MouseFollower />
     <Container maxW="container.lg">
       <Box
         borderRadius="lg"
