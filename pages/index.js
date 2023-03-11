@@ -30,13 +30,31 @@ import {
 import thumbMogo from '../public/images/works/mogo.png'
 import thumbChess from '../public/images/works/thumbChess.png'
 import Image from 'next/image'
+import MouseFollower from '../features/MouseFollower'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
+const getMyAge = () => {
+  const startDate = new Date('1999-08-12')
+  const currentDate = new Date()
+  const yearDiff = currentDate.getFullYear() - startDate.getFullYear()
+  const monthDiff = currentDate.getMonth() - startDate.getMonth()
+  const dayDiff = currentDate.getDate() - startDate.getDate()
+
+  let years = yearDiff
+
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    years--
+  }
+
+  return years
+}
+
 const Home = () => (
   <Layout>
+    <MouseFollower />
     <Container maxW="container.lg">
       <Box
         borderRadius="lg"
@@ -45,7 +63,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        ✨ Hello, I&apos;m a junior web developer ✨
+        ✨ Welcome to my digital playground ✨
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -54,7 +72,7 @@ const Home = () => (
             Savilencu Nicolae
           </Heading>
           <p>
-            Digital creator ( <Badge colorScheme="red"> Student</Badge> /{' '}
+            Digital narrator ( <Badge colorScheme="red"> Student</Badge> /{' '}
             <Badge colorScheme="purple"> Developer</Badge> /{' '}
             <Badge colorScheme="cyan"> Life of a party </Badge> )
           </p>
@@ -91,14 +109,18 @@ const Home = () => (
           About me
         </Heading>
         <Paragraph>
-          I am <span style={{ color: 'red' }}> 22 </span>/💯 years old. I was
-          born in Republic of Moldova, Cahul. In 2017 I started my road to
-          getting involved in dev. My first steps were creating basic static web
-          pages in notebook and then changing it&apos;s extension to{' '}
+          I am{' '}
+          <span style={{ color: 'red' }}>
+            {' '}
+            {console.log(getMyAge())} {getMyAge()}{' '}
+          </span>
+          /💯 years old. I was born in Republic of Moldova. In 2017 I started my
+          road to getting involved in dev. My first steps were creating basic
+          static web pages in notebook and then changing it&apos;s extension to{' '}
           <em style={{ color: '#81E6D9' }}> .html </em>. Although those were
           very dorky, I felt empowered by the fact that I could do something by
           myself and see the results on the screen. It was something I really
-          found myself passionate about and I started getting more deep into
+          found myself passionate about and I started getting deeper into
           investigating.
           <br />
           <br />
@@ -125,26 +147,37 @@ const Home = () => (
             <span style={{ color: '#81E6D9' }}> 2018 - 2021 </span>
           </BioYear>
           <br />
-          Completed Bachelor&apos;s Degree at Ovidius University from Constanța,
-          România.
+          Bachelor&apos;s Degree at Ovidius University from Constanța, România.
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
-          <span style={{ color: '#81E6D9' }}> 2021 </span> to{' '}
+            <span style={{ color: '#81E6D9' }}> 2021 </span> to{' '}
             <span style={{ color: '#81E6D9' }}> Present </span>{' '}
           </BioYear>
           <br />
-          Started Master&apos;s Degree at West University of Timișoara, Romania.
+          Master&apos;s Degree at West University of Timișoara, România.
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
             October <span style={{ color: '#81E6D9' }}> 2021 </span> to{' '}
-            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
+            <span style={{ color: '#81E6D9' }}> June 2022 </span>{' '}
           </BioYear>
           <br />
           Working at{' '}
           <Link href="https://www.evonomix.com/" target="_blank">
-            EVONOMIX
+            Evonomix
+          </Link>
+          .
+        </BioSection>
+        <BioSection mb={4}>
+          <BioYear>
+            July <span style={{ color: '#81E6D9' }}> 2022 </span> to{' '}
+            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
+          </BioYear>
+          <br />
+          Working at{' '}
+          <Link href="https://www.enovatika.com/" target="_blank">
+            Enovatika
           </Link>
           .
         </BioSection>
@@ -152,7 +185,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I 💜
+          What I 💜
         </Heading>
         <Paragraph>
           Since I was a kid I got my hand in many fields: football, basketball,
@@ -162,30 +195,39 @@ const Home = () => (
           <br />
           <br />A big passion of mine are computer games. Despite others
           opinions, for me - video games are a way to relax after a long day, or
-          it&apos;s an alternative way to keep in touch with your friends that are
-          far away.
+          it&apos;s an alternative way to keep in touch with your friends that
+          are far away.
           <br />
           <br />
           Here are some of my achievements:
           <br />
           <List>
             <ListItem>
-              <Badge colorScheme="orange" display="initial">CS:GO</Badge> Quarter finalist at Moldcell
-              Cup 2020
+              <Badge colorScheme="orange" display="initial">
+                CS:GO
+              </Badge>{' '}
+              Quarter finalist at Moldcell Cup - 2020
             </ListItem>
             <ListItem>
-              <Badge colorScheme="orange" display="initial">CS:GO</Badge>
+              <Badge colorScheme="orange" display="initial">
+                CS:GO
+              </Badge>
               <Link
                 href="https://www.faceit.com/en/players/NiXL1337"
                 target="_blank"
-              > Top 300
+              >
+                {' '}
+                Top 300
               </Link>{' '}
-              players from region <em> (Republic of Moldova) </em>
+              players from region <em> (Republic of Moldova)</em> - 2021
             </ListItem>
             <ListItem>
-              <Badge colorScheme="orange" display="initial">CS:GO</Badge> IGL and captain of team <span style={{color: "#D657A5"}}>&quot;CHGO&quot;</span>
+              <Badge colorScheme="orange" display="initial">
+                CS:GO
+              </Badge>{' '}
+              IGL and captain of team{' '}
+              <span style={{ color: '#D657A5' }}>&quot;CHGO&quot;</span>
             </ListItem>
-
           </List>
         </Paragraph>
       </Section>
@@ -260,33 +302,31 @@ const Home = () => (
               </Link>
             </ListItem>
             <ListItem>
-            <Tooltip
-                  label="NiXL#3224"
-                  aria-label="A tooltip"
-                  variant="ghost"
-                  colorScheme="teal"
-                  closeOnClick={false}
-                >
-              <Button
+              <Tooltip
+                label="NiXL#3224"
+                aria-label="A tooltip"
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoDiscord />}
+                closeOnClick={false}
               >
-              
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoDiscord />}
+                >
                   Discord
-              </Button>
-                </Tooltip>
+                </Button>
+              </Tooltip>
             </ListItem>
           </Center>
         </List>
 
         <SimpleGrid my={5} columns={[1, 2, 2]} gap={6}>
-
           <GridItem
             href="https://react-chess-delta.vercel.app/"
             title="Good old Chess game, but build by me"
             thumbnail={thumbChess}
-            >
+          >
             Created with <Badge colorScheme="blue"> React</Badge>
           </GridItem>
 
@@ -294,9 +334,9 @@ const Home = () => (
             href="https://mogogo.netlify.com/"
             title="Mogo"
             thumbnail={thumbMogo}
-            style={{minHeight: "200px"}}
-            >
-             A modern <Badge colorScheme="orange"> landing page</Badge>
+            style={{ minHeight: '200px' }}
+          >
+            A modern <Badge colorScheme="orange"> landing page</Badge>
           </GridItem>
         </SimpleGrid>
 
