@@ -231,7 +231,7 @@ const Home = () => (
           On the web
         </Heading>
 
-        <List mb={3} style={{ overflowY: 'auto' }}>
+        <List mb={3} style={{ overflowY: 'auto', padding: '10px 0' }}>
           <Center height="50px">
             <Box>
               <ListItem>

@@ -48,7 +48,6 @@ const Navbar = props => {
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
-   
     >
       <Container
         display="flex"
@@ -72,10 +71,10 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path} style={{borderRadius:"3px"}}>
+          <LinkItem href="/works" path={path} style={{ borderRadius: '3px' }}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path} style={{borderRadius:"3px"}}>
+          <LinkItem href="/posts" path={path} style={{ borderRadius: '3px' }}>
             Posts
           </LinkItem>
           <LinkItem
@@ -84,7 +83,7 @@ const Navbar = props => {
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ borderRadius: "3px", gap: 4 }}
+            style={{ borderRadius: '3px', gap: 4 }}
             pl={2}
           >
             <IoLogoGithub />
@@ -93,7 +92,7 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />              
+          <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -105,18 +104,49 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link} style={{borderRadius:"3px"}}>About</MenuItem>
+                  <MenuItem
+                    as={Link}
+                    style={{
+                      borderRadius: '3px',
+                      margin: '5px',
+                      width: 'auto'
+                    }}
+                  >
+                    About
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link} style={{borderRadius:"3px"}}>Works</MenuItem>
+                  <MenuItem
+                    as={Link}
+                    style={{
+                      borderRadius: '3px',
+                      margin: '5px',
+                      width: 'auto'
+                    }}
+                  >
+                    Works
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link} style={{borderRadius:"3px"}}>Posts</MenuItem>
+                  <MenuItem
+                    as={Link}
+                    style={{
+                      borderRadius: '3px',
+                      margin: '5px',
+                      width: 'auto'
+                    }}
+                  >
+                    Posts
+                  </MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
                   href="https://github.com/N1ckSL"
-                  style={{borderRadius:"3px"}}
+                  style={{
+                    borderRadius: '3px',
+                    margin: '5px',
+                    width: 'auto'
+                  }}
                 >
                   View Source
                 </MenuItem>
