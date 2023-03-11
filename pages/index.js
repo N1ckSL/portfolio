@@ -231,7 +231,12 @@ const Home = () => (
           On the web
         </Heading>
 
-        <List mb={3} style={{ overflowY: 'auto', padding: '10px 0' }}>
+        <List
+          mb={3}
+          style={{ overflowY: 'auto', padding: '10px 0' }}
+          display={{ base: 'flex', md: 'block' }}
+          justifyContent={{ base: 'flex-start', md: 'center' }}
+        >
           <Center height="50px">
             <Box>
               <ListItem>
