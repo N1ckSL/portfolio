@@ -19,7 +19,11 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Savilencu Nicolae" />
         <meta name="author" content="sav" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon-avatar.ico" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/favicon-avatar.ico"
+          type="image/x-icon"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Sav's Homepage" />
         <meta property="og:type" content="website" />

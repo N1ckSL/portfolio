@@ -107,11 +107,7 @@ const Home = () => (
           About me
         </Heading>
         <Paragraph>
-          I am{' '}
-          <span style={{ color: 'red' }}>
-            {' '}
-            {console.log(getMyAge())} {getMyAge()}{' '}
-          </span>
+          I am <span style={{ color: 'red' }}> {getMyAge()} </span>
           /💯 years old. I was born in Republic of Moldova. In 2017 I started my
           road to getting involved in dev. My first steps were creating basic
           static web pages in notebook and then changing it&apos;s extension to{' '}
@@ -199,35 +195,35 @@ const Home = () => (
           <br />
           Here are some of my achievements:
           <br />
-          <List>
-            <ListItem>
-              <Badge colorScheme="orange" display="initial">
-                CS:GO
-              </Badge>{' '}
-              Quarter finalist at Moldcell Cup - 2020
-            </ListItem>
-            <ListItem>
-              <Badge colorScheme="orange" display="initial">
-                CS:GO
-              </Badge>
-              <Link
-                href="https://www.faceit.com/en/players/NiXL1337"
-                target="_blank"
-              >
-                {' '}
-                Top 300
-              </Link>{' '}
-              players from region <em> (Republic of Moldova)</em> - 2021
-            </ListItem>
-            <ListItem>
-              <Badge colorScheme="orange" display="initial">
-                CS:GO
-              </Badge>{' '}
-              IGL and captain of team{' '}
-              <span style={{ color: '#D657A5' }}>&quot;CHGO&quot;</span>
-            </ListItem>
-          </List>
         </Paragraph>
+        <List>
+          <ListItem>
+            <Badge colorScheme="orange" display="initial">
+              CS:GO
+            </Badge>{' '}
+            Quarter finalist at Moldcell Cup - 2020
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="orange" display="initial">
+              CS:GO
+            </Badge>
+            <Link
+              href="https://www.faceit.com/en/players/NiXL1337"
+              target="_blank"
+            >
+              {' '}
+              Top 300
+            </Link>{' '}
+            players from region <em> (Republic of Moldova)</em> - 2021
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="orange" display="initial">
+              CS:GO
+            </Badge>{' '}
+            IGL and captain of team{' '}
+            <span style={{ color: '#D657A5' }}>&quot;CHGO&quot;</span>
+          </ListItem>
+        </List>
       </Section>
 
       <Section delay={0.3}>
