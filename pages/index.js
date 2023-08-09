@@ -145,11 +145,11 @@ const Home = () => (
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
-            <span style={{ color: '#81E6D9' }}> 2021 </span> to{' '}
-            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
+            <span style={{ color: '#81E6D9' }}> 2021 - 2023 </span>
           </BioYear>
           <br />
-          Master&apos;s Degree at West University of Timișoara, România.
+          Master&apos;s Degree in Software Engineering at West University of
+          Timișoara, România.
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
@@ -215,6 +215,19 @@ const Home = () => (
               Top 300
             </Link>{' '}
             players from region <em> (Republic of Moldova)</em> - 2021
+          </ListItem>
+          <ListItem>
+            <Badge colorScheme="orange" display="initial">
+              CS:GO
+            </Badge>
+            <Link
+              href="https://www.faceit.com/en/players/NiXL1337"
+              target="_blank"
+            >
+              {' '}
+              Top 200
+            </Link>{' '}
+            players from region <em> (Republic of Moldova)</em> - 2023
           </ListItem>
           <ListItem>
             <Badge colorScheme="orange" display="initial">
@@ -311,6 +324,10 @@ const Home = () => (
                 <Button
                   variant="ghost"
                   colorScheme="teal"
+                  onClick={() => {
+                    navigator.clipboard.writeText('NiXL#3224')
+                  }}
+                  cursor={'copy'}
                   leftIcon={<IoLogoDiscord />}
                 >
                   Discord
