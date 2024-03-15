@@ -9,26 +9,29 @@ const BeforeAfterSlider = () => {
   }
 
   return (
-    <div>
+    <div className="bg-slate-800 p-10">
+      Under construction 🚧
+      <br />
       <input
         type="range"
         id="slider"
         min="0"
         max="100"
-        value={sliderPos}
+        value={sliderPos + 20}
         onChange={e => handleChange(e)}
+        disabled
       />
       <div
         className="absolute bg-[url('https://images.pexels.com/photos/20400720/pexels-photo-20400720/free-photo-of-a-beach-with-a-boat-on-the-shore-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]"
-        style={{ width: `${sliderPos}%` }}
+        // style={{ width: `${sliderPos}%` }}
       />
       <div
         className="bg-[url('https://images.pexels.com/photos/20400720/pexels-photo-20400720/free-photo-of-a-beach-with-a-boat-on-the-shore-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]"
-        style={{ width: `${sliderPos}%` }}
+        // style={{ width: `${sliderPos}%` }}
       />
       <div
         className="slider-button"
-        style={{ left: `calc(${sliderPos}% - 18px)` }}
+        // style={{ left: `calc(${sliderPos}% - 18px)` }}
       />
     </div>
   )

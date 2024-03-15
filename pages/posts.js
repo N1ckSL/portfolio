@@ -31,8 +31,8 @@ const Posts = () => (
           </Badge>
           <Text fontSize="xl"> soon. </Text>
         </Stack>
-        <BeforeAfterSlider />
       </Center>
+      <BeforeAfterSlider />
 
       {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
