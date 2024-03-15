@@ -7,6 +7,7 @@ import {
   Text
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
+import BeforeAfterSlider from '../components/before-after-slider'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -15,7 +16,12 @@ const Posts = () => (
         Popular Posts
       </Heading>
       <Center>
-        <Stack direction="row" mb={200} mt={10} style={{display:'flex', justifyContent:'center'}}>
+        <Stack
+          direction="row"
+          mb={200}
+          mt={10}
+          style={{ display: 'flex', justifyContent: 'center' }}
+        >
           <Text fontSize="xl"> Coming </Text>
           <Badge colorScheme="cyan" fontSize="xl">
             very
@@ -25,6 +31,7 @@ const Posts = () => (
           </Badge>
           <Text fontSize="xl"> soon. </Text>
         </Stack>
+        <BeforeAfterSlider />
       </Center>
 
       {/* <Section delay={0.1}>
