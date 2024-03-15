@@ -10,7 +10,7 @@ const BeforeAfterSlider = () => {
 
   return (
     <div className="bg-slate-800 p-10">
-      Under construction 🚧
+      🚧 Under construction 🚧
       <br />
       <input
         type="range"
