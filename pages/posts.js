@@ -1,3 +1,4 @@
+import * as React from 'react'
 import {
   Badge,
   Center,
@@ -7,7 +8,7 @@ import {
   Text
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import BeforeAfterSlider from '../components/before-after-slider'
+import { ImgComparisonSlider } from '@img-comparison-slider/react'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -32,7 +33,29 @@ const Posts = () => (
           <Text fontSize="xl"> soon. </Text>
         </Stack>
       </Center>
-      <BeforeAfterSlider />
+      <ImgComparisonSlider
+        style={{
+          outline: 'none',
+          transition: 'box-shadow 0.3s ease',
+          borderRadius: '8px',
+          backgroundColor: 'black'
+        }}
+        onFocus={event => {
+          event.target.style.boxShadow = '0px 0px 15px -3px #9DECF9'
+        }}
+        onBlur={event => {
+          event.target.style.boxShadow = 'none'
+        }}
+      >
+        <img
+          slot="first"
+          src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <img
+          slot="second"
+          src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </ImgComparisonSlider>
 
       {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
