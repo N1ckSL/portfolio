@@ -4,7 +4,7 @@ import {
   Box,
   Center,
   Container,
-  Flex,
+  Image,
   Link,
   Stack,
   Text,
@@ -37,7 +37,6 @@ function Posts() {
           adventure.
         </Box>
       </Center>
-
       <div
         className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:right-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tl before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
           colorMode === 'dark'
@@ -47,6 +46,7 @@ function Posts() {
       >
         <Center w="100%">
           <ImgComparisonSlider
+            value={69}
             style={{
               outline: 'none',
               transition: 'box-shadow 0.3s ease',
@@ -54,13 +54,10 @@ function Posts() {
               backgroundColor: 'black'
             }}
           >
-            <img
-              slot="first"
-              src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-            <img
+            <Image slot="first" src="/images/posts/website_disolve_after.png" />
+            <Image
               slot="second"
-              src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/posts/website_disolve_before.png"
             />
           </ImgComparisonSlider>
         </Center>
@@ -91,6 +88,7 @@ function Posts() {
       >
         <Center w="100%">
           <ImgComparisonSlider
+            value={57}
             style={{
               outline: 'none',
               transition: 'box-shadow 0.3s ease',
@@ -98,13 +96,13 @@ function Posts() {
               backgroundColor: 'black'
             }}
           >
-            <img
+            <Image
               slot="first"
-              src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/posts/website_isometric_room_after.png"
             />
-            <img
+            <Image
               slot="second"
-              src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/images/posts/website_isometric_room_before.png"
             />
           </ImgComparisonSlider>
         </Center>
