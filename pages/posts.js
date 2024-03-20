@@ -29,7 +29,7 @@ function Posts() {
             </Badge>
             .
           </Text>
-          The first time i oppened the app i understood that flying a plane
+          The first time I oppened the app I understood that flying a plane
           might be easier than learning the basics of Blender. However, as I
           dove into learning it, I found myself on a rewarding journey of growth
           and creativity. Each step forward brought a sense of accomplishment,
@@ -38,111 +38,94 @@ function Posts() {
         </Box>
       </Center>
 
-      <Box
-        p={4}
-        bgColor={colorMode === 'dark' ? '#ffffff05' : '#00000010'}
-        rounded={6}
-        mt={4}
+      <div
+        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:right-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tl before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
+          colorMode === 'dark'
+            ? 'bg-[#ffffff05] before:from-orange'
+            : 'bg-[#00000010] before:from-purple'
+        }`}
       >
-        <Flex gap={6}>
-          <Center w="100%">
-            <ImgComparisonSlider
-              style={{
-                outline: 'none',
-                transition: 'box-shadow 0.3s ease',
-                borderRadius: '6px',
-                backgroundColor: 'black'
-              }}
-              onFocus={event => {
-                event.target.style.boxShadow =
-                  colorMode === 'dark'
-                    ? '0px 0px 15px -3px #FBD38D'
-                    : '0px 0px 15px -3px #8059D5'
-              }}
-              onBlur={event => {
-                event.target.style.boxShadow = 'none'
-              }}
-            >
-              <img
-                slot="first"
-                src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-              <img
-                slot="second"
-                src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </ImgComparisonSlider>
-          </Center>
-          <Box w="45%">
-            <Text
-              mb={2}
-              fontSize="lg"
-              color={colorMode === 'dark' ? '#FBD38D' : '#8059D5'}
-            >
-              Light dispersion
-            </Text>
-            <Text fontSize="sm">
-              In my latest, I delved into the mesmerizing world of light
-              dispersion. Using Blender's versatile tools, I crafted a visually
-              captivating scene that showcases the intricate beauty of light as
-              it bends and scatters through various mediums.
-            </Text>
-          </Box>
-        </Flex>
-      </Box>
+        <Center w="100%">
+          <ImgComparisonSlider
+            style={{
+              outline: 'none',
+              transition: 'box-shadow 0.3s ease',
+              borderRadius: '6px',
+              backgroundColor: 'black'
+            }}
+          >
+            <img
+              slot="first"
+              src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <img
+              slot="second"
+              src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </ImgComparisonSlider>
+        </Center>
+        <Box w={{ base: '100%', md: '45%' }}>
+          <Text
+            mb={2}
+            mt={{ base: 4, md: '0' }}
+            fontSize="lg"
+            color={colorMode === 'dark' ? '#FBD38D' : '#8059D5'}
+          >
+            Light dispersion
+          </Text>
+          <Text fontSize="sm">
+            In my latest, I delved into the mesmerizing world of light
+            dispersion. Using Blender's versatile tools, I crafted a visually
+            captivating scene that showcases the intricate beauty of light as it
+            bends and scatters through various mediums.
+          </Text>
+        </Box>
+      </div>
 
-      <Box
-        p={4}
-        bgColor={colorMode === 'dark' ? '#ffffff05' : '#00000010'}
-        rounded={6}
-        mt={8}
+      <div
+        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 flex-row-reverse before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
+          colorMode === 'dark'
+            ? 'bg-[#ffffff05] before:from-orange'
+            : 'bg-[#00000010] before:from-purple'
+        }`}
       >
-        <Flex gap={6} flexDir="row-reverse">
-          <Center w="100%">
-            <ImgComparisonSlider
-              style={{
-                outline: 'none',
-                transition: 'box-shadow 0.3s ease',
-                borderRadius: '6px',
-                backgroundColor: 'black'
-              }}
-              onFocus={event => {
-                event.target.style.boxShadow =
-                  colorMode === 'dark'
-                    ? '0px 0px 15px -3px #FBD38D'
-                    : '0px 0px 15px -3px #8059D5'
-              }}
-              onBlur={event => {
-                event.target.style.boxShadow = 'none'
-              }}
-            >
-              <img
-                slot="first"
-                src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-              <img
-                slot="second"
-                src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </ImgComparisonSlider>
-          </Center>
-          <Box w="45%">
-            <Text
-              mb={2}
-              fontSize="lg"
-              color={colorMode === 'dark' ? '#FBD38D' : '#8059D5'}
-            >
-              Isometric 3D room
-            </Text>
-            <Text fontSize="sm">
-              I tried my hand at creating an isometric 3D room. It was a fun
-              adventure! I built a funky room filled with neat stuff. From funky
-              furniture to walls, I crafted every detail with care. The
-              isometric view adds a cool vibe, making everything pop.
-            </Text>
-          </Box>
-        </Flex>
-      </Box>
+        <Center w="100%">
+          <ImgComparisonSlider
+            style={{
+              outline: 'none',
+              transition: 'box-shadow 0.3s ease',
+              borderRadius: '6px',
+              backgroundColor: 'black'
+            }}
+          >
+            <img
+              slot="first"
+              src="https://images.unsplash.com/photo-1707345512638-997d31a10eaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <img
+              slot="second"
+              src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </ImgComparisonSlider>
+        </Center>
+        <Box w={{ base: '100%', md: '45%' }}>
+          <Text
+            mb={2}
+            mt={{ base: 4, md: '0' }}
+            fontSize="lg"
+            color={colorMode === 'dark' ? '#FBD38D' : '#8059D5'}
+            zIndex={10}
+          >
+            Isometric 3D room
+          </Text>
+          <Text fontSize="sm" zIndex={10}>
+            I tried my hand at creating an isometric 3D room. It was a fun
+            adventure! I built a funky room filled with neat stuff. From funky
+            furniture to walls, I crafted every detail with care. The isometric
+            view adds a cool vibe, making everything pop.
+          </Text>
+        </Box>
+      </div>
 
       <Container align="center" mt={10}>
         <Stack
