@@ -38,10 +38,10 @@ function Posts() {
         </Box>
       </Center>
       <div
-        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:right-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tl before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
+        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:right-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tl before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
           colorMode === 'dark'
-            ? 'bg-[#ffffff05] before:from-orange'
-            : 'bg-[#00000010] before:from-purple'
+            ? 'bg-[#ffffff05] before:from-[#FBD18A2C]'
+            : 'bg-[#00000010] before:from-[#805AD52C]'
         }`}
       >
         <Center w="100%">
@@ -80,10 +80,10 @@ function Posts() {
       </div>
 
       <div
-        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 flex-row-reverse ${
+        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 flex-row-reverse before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
           colorMode === 'dark'
-            ? 'bg-[#ffffff05] before:from-orange-main before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%]'
-            : 'bg-[#00000010] before:from-purple-main before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%]'
+            ? 'bg-[#ffffff05] before:from-[#FBD18A2C]'
+            : 'bg-[#00000010] before:from-[#805AD52C]'
         }`}
       >
         <Center w="100%">

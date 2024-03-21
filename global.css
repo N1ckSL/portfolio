@@ -662,6 +662,10 @@ video {
   padding: 1.5rem;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .outline {
   outline-style: solid;
 }
@@ -727,6 +731,20 @@ video {
 .before\:bg-gradient-to-tr::before {
   content: var(--tw-content);
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.before\:from-\[\#805AD52C\]::before {
+  content: var(--tw-content);
+  --tw-gradient-from: #805AD52C var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(128 90 213 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.before\:from-\[\#FBD18A2C\]::before {
+  content: var(--tw-content);
+  --tw-gradient-from: #FBD18A2C var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(251 209 138 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .before\:from-\[\#fbd38d2c\]::before {
