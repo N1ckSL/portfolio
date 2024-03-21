@@ -384,7 +384,7 @@ const Home = () => (
         <SimpleGrid my={5} columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://react-chess-delta.vercel.app/"
-            title="Good old Chess game, but build by me"
+            title="Good old Chess game, but built by me"
             thumbnail={thumbChess}
           >
             Created with <Badge colorScheme="blue"> React</Badge>

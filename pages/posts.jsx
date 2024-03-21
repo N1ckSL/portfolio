@@ -46,7 +46,7 @@ function Posts() {
       >
         <Center w="100%">
           <ImgComparisonSlider
-            value={69}
+            value={66}
             style={{
               outline: 'none',
               transition: 'box-shadow 0.3s ease',
@@ -80,10 +80,10 @@ function Posts() {
       </div>
 
       <div
-        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 flex-row-reverse before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%] ${
+        className={`relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6 flex-row-reverse ${
           colorMode === 'dark'
-            ? 'bg-[#ffffff05] before:from-orange'
-            : 'bg-[#00000010] before:from-purple'
+            ? 'bg-[#ffffff05] before:from-orange-main before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%]'
+            : 'bg-[#00000010] before:from-purple-main before:hover:opacity-100 before:transition-all before:duration-300 before:opacity-0 before:absolute before:pointer-events-none before:-z-10 before:left-0 before:bottom-0 before:w-1/2 before:h-full before:bg-gradient-to-tr before:from-[#fbd38d2c] before:to-transparent before:via-transparent before:from-[1%] before:to-[80%]'
         }`}
       >
         <Center w="100%">
