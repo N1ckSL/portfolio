@@ -4,11 +4,9 @@ import {
   Box,
   Center,
   Container,
-  Image,
   Link,
   Stack,
-  Text,
-  useColorMode
+  Text
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import PostCard from '../components/post-card'
@@ -35,6 +33,7 @@ function Posts() {
           adventure.
         </Box>
       </Center>
+
       <PostCard
         title="Light dispersion"
         firstImage="/images/posts/website_disolve_after.png"
