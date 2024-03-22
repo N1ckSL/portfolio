@@ -65,14 +65,21 @@ function Posts() {
           mt={10}
           style={{ display: 'flex', justifyContent: 'center' }}
         >
-          <Text fontSize="xl"> More will be comming </Text>
-          <Badge colorScheme="cyan" fontSize="xl">
-            very
-          </Badge>
-          <Badge colorScheme="purple" fontSize="xl">
-            very
-          </Badge>
-          <Text fontSize="xl"> soon. </Text>
+          <div className="flex md:flex-row flex-col items-center gap-2">
+            <Text fontSize="xl" flexWrap>
+              {' '}
+              More will be comming{' '}
+            </Text>
+            <div className="flex items-center gap-2">
+              <Badge colorScheme="cyan" fontSize="xl">
+                very
+              </Badge>
+              <Badge colorScheme="purple" fontSize="xl">
+                very
+              </Badge>
+            </div>
+            <Text fontSize="xl"> soon. </Text>
+          </div>
         </Stack>
       </Container>
     </Layout>

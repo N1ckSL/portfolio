@@ -666,6 +666,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -835,5 +839,9 @@ video {
 
   .md\:h-\[31rem\] {
     height: 31rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 }
