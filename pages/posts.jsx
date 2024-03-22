@@ -33,31 +33,31 @@ function Posts() {
           adventure.
         </Box>
       </Center>
+      <div id="cards" className="flex flex-col items-center gap-4">
+        <PostCard
+          title="Light dispersion"
+          firstImage="/images/posts/website_disolve_after.png"
+          secondImage="/images/posts/website_disolve_before.png"
+        >
+          In my latest, I delved into the mesmerizing world of light dispersion.
+          Using Blender's versatile tools, I crafted a visually captivating
+          scene that showcases the intricate beauty of light as it bends and
+          scatters through various mediums.
+        </PostCard>
 
-      <PostCard
-        title="Light dispersion"
-        firstImage="/images/posts/website_disolve_after.png"
-        secondImage="/images/posts/website_disolve_before.png"
-      >
-        In my latest, I delved into the mesmerizing world of light dispersion.
-        Using Blender's versatile tools, I crafted a visually captivating scene
-        that showcases the intricate beauty of light as it bends and scatters
-        through various mediums.
-      </PostCard>
-
-      <PostCard
-        direction="reverse"
-        imageSliderValue={58}
-        title="Isometric 3D room"
-        firstImage="/images/posts/website_isometric_room_after.png"
-        secondImage="/images/posts/website_isometric_room_before.png"
-      >
-        I tried my hand at creating an isometric 3D room. It was a fun
-        adventure! I built a funky room filled with neat stuff. From funky
-        furniture to walls, I crafted every detail with care. The isometric view
-        adds a cool vibe, making everything pop.
-      </PostCard>
-
+        <PostCard
+          direction="reverse"
+          imageSliderValue={58}
+          title="Isometric 3D room"
+          firstImage="/images/posts/website_isometric_room_after.png"
+          secondImage="/images/posts/website_isometric_room_before.png"
+        >
+          I tried my hand at creating an isometric 3D room. It was a fun
+          adventure! I built a funky room filled with neat stuff. From funky
+          furniture to walls, I crafted every detail with care. The isometric
+          view adds a cool vibe, making everything pop.
+        </PostCard>
+      </div>
       <Container align="center" mt={10}>
         <Stack
           direction="row"

@@ -24,30 +24,36 @@ const PostCard = ({
   }
 
   return (
-    <div id="cards">
-      <div
-        ref={cardsRef}
-        onMouseMove={handleMouseMove}
-        className={`card relative overflow-hidden p-6 rounded-lg mt-10 md:flex gap-6
+    <div
+      ref={cardsRef}
+      onMouseMove={handleMouseMove}
+      className={`card relative w-full md:h-[31rem] h-[50rem] flex rounded-[10px] overflow-hidden p-6 rounded-lg mt-10
         after:hover:opacity-100 after:w-full after:h-full after:left-0 after:top-0 after:opacity-0
         after:content-[''] after:absolute after:transition-all after:duration-500 after:-z-10
+        before:hover:opacity-100
        ${
          colorMode === 'dark'
-           ? 'bg-[#ffffff05] after:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(251,211,141,0.1),transparent_95%)]'
-           : 'bg-[#00000010] after:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(128,89,213,0.2),transparent_95%)]'
+           ? 'bg-[rgba(255,255,255,0.1)] after:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(251,211,141,0.1),transparent_95%)]'
+           : 'bg-[rgba(255,255,255,0.1)] after:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(128,89,213,0.2),transparent_95%)]'
        }
-       ${direction === 'reverse' ? ' flex-row-reverse' : ''}
        `}
+    >
+      <div
+        className={`card-content md:flex absolute inset-[1px] rounded-[inherit] gap-6 p-6 
+         ${direction === 'reverse' ? ' flex-row-reverse' : ''}
+         ${colorMode === 'dark' ? 'bg-black/40' : 'bg-[#00000010]'}
+        
+        `}
       >
-        {/* <div className="card-content"> */}
-        <Center w="100%">
+        <Center w="100%" position="relative" zIndex={20}>
           <ImgComparisonSlider
             value={imageSliderValue ?? 66}
             style={{
               outline: 'none',
               transition: 'box-shadow 0.3s ease',
               borderRadius: '6px',
-              backgroundColor: 'black'
+              backgroundColor: 'black',
+              position: 'relative'
             }}
           >
             <Image slot="first" src={firstImage} />
@@ -63,9 +69,10 @@ const PostCard = ({
           >
             {title}
           </Text>
-          <Text>{children}</Text>
+          <Text color={colorMode === 'dark' ? 'white' : 'black'}>
+            {children}
+          </Text>
         </Box>
-        {/* </div> */}
       </div>
     </div>
   )
