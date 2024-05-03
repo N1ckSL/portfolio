@@ -658,16 +658,16 @@ video {
   align-items: center;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -820,6 +820,14 @@ video {
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.odd\:flex-row:nth-child(odd) {
+  flex-direction: row;
+}
+
+.even\:flex-row-reverse:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .before\:hover\:opacity-100:hover::before {

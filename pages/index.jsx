@@ -71,8 +71,8 @@ const Home = () => (
             Savilencu Nicolae
           </Heading>
           <p>
-            Digital narrator ( <Badge colorScheme="red"> Student</Badge> /{' '}
-            <Badge colorScheme="purple"> Developer</Badge> /{' '}
+            Digital narrator ( <Badge colorScheme="purple"> Developer</Badge> /{' '}
+            <Badge colorScheme="red"> Gamer</Badge> /{' '}
             <Badge colorScheme="cyan"> Life of a party </Badge> )
           </p>
         </Box>

@@ -33,20 +33,33 @@ function Posts() {
           adventure.
         </Box>
       </Center>
+
       <div id="cards" className="flex flex-col items-center gap-4">
         <PostCard
-          title="Light dispersion"
-          firstImage="/images/posts/website_disolve_after.png"
-          secondImage="/images/posts/website_disolve_before.png"
+          title="American style building"
+          imageSliderValue={42.5}
+          firstImage="/images/posts/website_building_after.png"
+          secondImage="/images/posts/website_building_before.png"
         >
-          In my latest, I delved into the mesmerizing world of light dispersion.
-          Using Blender's versatile tools, I crafted a visually captivating
-          scene that showcases the intricate beauty of light as it bends and
-          scatters through various mediums.
+          This is my most complex project so far. I recreated a building from
+          the 90s. It has a lot of small details which took way longer that I
+          expected. I'm happy with the result, but I know it can be improved, so
+          perhaps in the future I'll come back to it and make it even better.
         </PostCard>
 
         <PostCard
           direction="reverse"
+          title="Light dispersion"
+          firstImage="/images/posts/website_disolve_after.png"
+          secondImage="/images/posts/website_disolve_before.png"
+        >
+          I delved into the mesmerizing world of light dispersion. Using
+          Blender's versatile tools, I crafted a visually captivating scene that
+          showcases the intricate beauty of light as it bends and scatters
+          through various mediums.
+        </PostCard>
+
+        <PostCard
           imageSliderValue={58}
           title="Isometric 3D room"
           firstImage="/images/posts/website_isometric_room_after.png"
