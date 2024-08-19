@@ -139,26 +139,15 @@ const Home = () => (
         </Heading>
         <BioSection mb={4}>
           <BioYear>
-            <span style={{ color: '#81E6D9' }}> 2018 - 2021 </span>
+            July <span style={{ color: '#81E6D9' }}> 2022 </span> to{' '}
+            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
           </BioYear>
           <br />
-          Bachelor&apos;s Degree at Ovidius University from Constanța, România.
-        </BioSection>
-        <BioSection mb={4}>
-          <BioYear>
-            <span style={{ color: '#81E6D9' }}> 2021 - 2023 </span>
-          </BioYear>
-          <br />
-          Master&apos;s Degree in Software Engineering at West University of
-          Timișoara, România.
-        </BioSection>
-        <BioSection mb={4}>
-          <BioYear>
-            <span style={{ color: '#81E6D9' }}> 2023 - Present </span>
-          </BioYear>
-          <br />
-          Master&apos;s Degree in Studies of Global Security at West University
-          of Timișoara, România.
+          Working at{' '}
+          <Link href="https://www.enovatika.com/" target="_blank">
+            Enovatika
+          </Link>
+          .
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
@@ -174,15 +163,26 @@ const Home = () => (
         </BioSection>
         <BioSection mb={4}>
           <BioYear>
-            July <span style={{ color: '#81E6D9' }}> 2022 </span> to{' '}
-            <span style={{ color: '#81E6D9' }}> Present </span>{' '}
+            <span style={{ color: '#81E6D9' }}> 2023 - Present </span>
           </BioYear>
           <br />
-          Working at{' '}
-          <Link href="https://www.enovatika.com/" target="_blank">
-            Enovatika
-          </Link>
-          .
+          Master&apos;s Degree in Studies of Global Security at West University
+          of Timișoara, România.
+        </BioSection>
+        <BioSection mb={4}>
+          <BioYear>
+            <span style={{ color: '#81E6D9' }}> 2021 - 2023 </span>
+          </BioYear>
+          <br />
+          Master&apos;s Degree in Software Engineering at West University of
+          Timișoara, România.
+        </BioSection>
+        <BioSection mb={4}>
+          <BioYear>
+            <span style={{ color: '#81E6D9' }}> 2018 - 2021 </span>
+          </BioYear>
+          <br />
+          Bachelor&apos;s Degree at Ovidius University from Constanța, România.
         </BioSection>
       </Section>
 
