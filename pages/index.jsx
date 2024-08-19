@@ -119,8 +119,8 @@ const Home = () => (
           investigating.
           <br />
           <br />
-          Most exciting thing for me is looking back to where I was at the
-          begining and comparing my achievements, successes, and failures. This
+          The most exciting thing for me is looking back to where I was at the
+          beginning and comparing my achievements, successes, and failures. This
           gives me motivation to continuously evolve. Looking back to where I
           started - it&apos;s a long road, which I do not regreting taking.
         </Paragraph>
