@@ -155,7 +155,7 @@ const Home = () => (
             <span style={{ color: '#81E6D9' }}> June 2022 </span>{' '}
           </BioYear>
           <br />
-          Working at{' '}
+          Worked at{' '}
           <Link href="https://www.evonomix.com/" target="_blank">
             Evonomix
           </Link>
