@@ -143,7 +143,19 @@ const Home = () => (
             <span style={{ color: '#81E6D9' }}> Present </span>{' '}
           </BioYear>
           <br />
-          Working at{' '}
+          Software Engineer at{' '}
+          <Link href="https://www.opswat.com/" target="_blank">
+            OPSWAT.
+          </Link>
+          .
+        </BioSection>
+        <BioSection mb={4}>
+          <BioYear>
+            July <span style={{ color: '#81E6D9' }}> 2022 </span> to{' '}
+            <span style={{ color: '#81E6D9' }}> 2024 </span>{' '}
+          </BioYear>
+          <br />
+          Mid frontend developer at{' '}
           <Link href="https://www.enovatika.com/" target="_blank">
             Enovatika
           </Link>
@@ -155,7 +167,7 @@ const Home = () => (
             <span style={{ color: '#81E6D9' }}> June 2022 </span>{' '}
           </BioYear>
           <br />
-          Worked at{' '}
+          Junior frontend developer at{' '}
           <Link href="https://www.evonomix.com/" target="_blank">
             Evonomix
           </Link>
