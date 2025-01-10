@@ -403,7 +403,7 @@ const Home = () => (
           </GridItem>
 
           <GridItem
-            href="https://mogogo.netlify.com/"
+            href="https://mogogo.netlify.app/"
             title="Mogo"
             thumbnail={thumbMogo}
             style={{ minHeight: '200px' }}
