@@ -139,7 +139,7 @@ const Home = () => (
         </Heading>
         <BioSection mb={4}>
           <BioYear>
-            July <span style={{ color: '#81E6D9' }}> 2022 </span> to{' '}
+            November <span style={{ color: '#81E6D9' }}> 2024 </span> to{' '}
             <span style={{ color: '#81E6D9' }}> Present </span>{' '}
           </BioYear>
           <br />
