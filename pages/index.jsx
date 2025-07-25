@@ -109,9 +109,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I am <span style={{ color: 'red' }}> {getMyAge()} </span>
-          /💯 years old. I was born in Republic of Moldova. In 2017 I started my
-          road to getting involved in dev. My first steps were creating basic
-          static web pages in notebook and then changing it&apos;s extension to{' '}
+          /💯 years old. In 2017 I started my road to getting involved in dev. 
+          My first steps were creating basic static web pages in notebook and then changing it&apos;s extension to{' '}
           <em style={{ color: '#81E6D9' }}> .html </em>. Although those were
           very dorky, I felt empowered by the fact that I could do something by
           myself and see the results on the screen. It was something I really
